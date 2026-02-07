@@ -5,7 +5,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const IMAGES = Array.from({ length: 19 }).map(
-  (_, i) => "/gallery/img_" + (i + 1) + ".jpg"
+  (_, i) => "gallery/img_" + (i + 1) + ".jpg"
 );
 
 export default function GallerySection() {

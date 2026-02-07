@@ -6,32 +6,32 @@ const ITEMS = [
   {
     title: "Aberdeen Angus",
     text: "Chov plemenného skotu Aberdeen Angus.",
-    icon: "/icons/cow.png",
+    icon: "icons/cow.png",
   },
   {
     title: "Starokladrubský kůň",
     text: "Chov koní plemene Starokladrubský kůň.",
-    icon: "/icons/horse.png",
+    icon: "icons/horse.png",
   },
   {
     title: "Pastevní ustájení",
     text: "Pastevní ustájení koní v přirozených podmínkách.",
-    icon: "/icons/grass.png",
+    icon: "icons/grass.png",
   },
   {
     title: "Bio hovězí maso",
     text: "Prodej bio hovězího masa na objednávku.",
-    icon: "/icons/meat.png",
+    icon: "icons/meat.png",
   },
   {
     title: "Vyjížďky na koních",
     text: "Možnost vyjížděk na koních po okolí.",
-    icon: "/icons/horse-rider.png",
+    icon: "icons/horse-rider.png",
   },
   {
     title: "Mufloní zvěř",
     text: "Chov mufloní zvěře.",
-    icon: "/icons/ram.png",
+    icon: "icons/ram.png",
   },
 ];
 
