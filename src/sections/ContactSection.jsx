@@ -103,8 +103,8 @@ export default function ContactSection() {
             <Typography>
               <strong>Ranč v Hájku</strong>
             </Typography>
-            <Typography>Email: info@rancvhajku.cz</Typography>
-            <Typography>Telefon: +420 000 000 000</Typography>
+            <Typography>Email: bio@rancvhajku.cz</Typography>
+            <Typography>Telefon: +420 737 787 061</Typography>
             <Typography>
               Facebook:{" "}
               <a
