@@ -38,9 +38,6 @@ export default function Navbar() {
               filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.35))",
             }}
           />
-          <Typography variant="h6" sx={{ fontWeight: 800, letterSpacing: 0.3 }}>
-            Bio Ranč v Hájku
-          </Typography>
 
           <Box sx={{ flex: 1 }} />
 
