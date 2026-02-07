@@ -2,6 +2,7 @@
   "name": "bio_ranc_v_hajku",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://scholzovalucie.github.io/BioRancVHajku",
   "type": "module",
   "scripts": {
     "dev": "vite",
