@@ -18,7 +18,7 @@ const ANIMALS = [
   {
     name: "Aberdeen Angus",
     text: "Masné plemeno skotu známé kvalitou masa.",
-    image: "/images/angus.jpg",
+    image: "/Angus.jpg",
     detail: [
       "Aberdeen-anguský skot je masné plemeno skotu typické bezrohostí a plášťovým zbarvením, zvířata jsou jednolitě černá nebo červenohnědá. Je to jedno z nejvíce chovaných masných plemen na světě.",
       "V hojném počtu je toto plemeno zastoupeno též v České republice, první telata se zde narodila v roce 1992 a v roce 2003 byl Aberdeen-anguský skot druhým nejčastěji chovaným masným plemenem v ČR.",
@@ -29,7 +29,7 @@ const ANIMALS = [
   {
     name: "Mangalice",
     text: "Tradiční kudrnaté prase.",
-    image: "/images/mangalica.jpg",
+    image: "/mangalice.jpg",
     detail: [
       "Mangalica, také mangalice, mangalika nebo mangulica je primitivní plemeno prasat pocházející z Velké uherské nížiny.",
       "Vyznačuje se hustými, zvlněnými štětinami. Jedná se o plemeno sádelného typu. Plemeno se vyznačuje dlouhou vlnitou srstí, jíž vedle štětin tvoří i podsada.",
@@ -42,7 +42,7 @@ const ANIMALS = [
   {
     name: "Muflon Evropský",
     text: "Původní horské zvíře.",
-    image: "/images/muflon.jpg",
+    image: "/muflon2.jpg",
     detail: [
       "Muflon dosahuje délky 110 až 130 cm, výšky v kohoutku 70 až 90 cm a hmotnosti 35 až 55 kg. Muflonice jsou menší a dosahují maximálně 30 kg. Letní srst muflona je krátká a rezavohnědá. Bílá srst je na břichu, vnitřní straně a spodku nohou, okolo úst, uvnitř uší, okolo krátkého chvostu a na sedle. Muflon má mohutné spirálovitě stočené rohy 'toulce'. Mladému muflonkovi už po 2 měsících začínají narůstat růžky a roční muflonek je má dlouhé 25 až 35 cm.",
       "Mufloni kdysi žili ve skalnatých pohořích okolo středozemního moře. Počátek chovu muflonů u nás se nejčastěji datuje do 50. a 60. let minulého století, kdy byli do obory v Hluboké nad Vltavou dovezeni mufloni z rakouské obory Lainz.",
@@ -67,8 +67,22 @@ export default function AnimalsSection() {
 
       <Grid container spacing={3} justifyContent="center">
         {ANIMALS.map((animal) => (
-          <Grid item xs={12} md={6} lg={3} key={animal.name}>
-            <Card sx={{ textAlign: "center" }}>
+          <Grid
+            item
+            width={{ md: "300px", xs: "300px" }}
+            height={{ md: "200px", xs: "200px" }}
+            key={animal.name}
+          >
+            <Card
+              sx={{
+                textAlign: "center",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               {" "}
               <CardContent>
                 <Typography variant="h6">{animal.name}</Typography>
