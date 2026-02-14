@@ -14,6 +14,7 @@ const NAV_ITEMS = [
   { label: "O nás", id: "about" },
   { label: "Zaměření", id: "focus" },
   { label: "Zvířata", id: "animals" },
+  { label: "Lesní klub", id: "lesni-klub" },
   { label: "Galerie", id: "gallery" },
   { label: "Kontakt", id: "contact" },
 ];

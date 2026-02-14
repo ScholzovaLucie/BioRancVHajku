@@ -18,35 +18,44 @@ import Section from "../components/Section";
 const ANIMALS = [
   {
     name: "Aberdeen Angus",
-    text: "Masné plemeno skotu známé kvalitou masa.",
-    image: "Angus.jpg",
+    text: "Oblíbené masné plemeno skotu proslulé vysokou kvalitou hovězího masa.",
+    image: "Angus.jpeg",
     detail: [
-      "Aberdeen-anguský skot je masné plemeno skotu typické bezrohostí a plášťovým zbarvením, zvířata jsou jednolitě černá nebo červenohnědá. Je to jedno z nejvíce chovaných masných plemen na světě.",
-      "V hojném počtu je toto plemeno zastoupeno též v České republice, první telata se zde narodila v roce 1992 a v roce 2003 byl Aberdeen-anguský skot druhým nejčastěji chovaným masným plemenem v ČR.",
-      "Zemí původu plemene je severovýchodní Skotsko. Již na začátku 18. století se v krajích Aberdeenshire a Forfarshire podařilo vyšlechtit masný užitkový typ skotu.",
-      "Postupně se chov rozšířil z Evropy do Severní a Jižní Ameriky, Austrálie, na Nový Zéland i do Afriky. Do České republiky byly první kusy importovány v roce 1991.",
+      "Aberdeen angus je masné plemeno skotu typické svou bezrohostí a jednolitým zbarvením srsti. Nejčastěji se vyskytuje v černé nebo červenohnědé variantě a patří mezi nejrozšířenější masná plemena na světě.",
+      "V České republice se toto plemeno chová ve velkém množství. První telata se zde narodila v roce 1992 a již o několik let později patřil angus mezi nejčastěji chovaná masná plemena.",
+      "Jeho původ sahá do severovýchodního Skotska, kde se již na počátku 18. století v oblastech Aberdeenshire a Forfarshire podařilo vyšlechtit odolný a kvalitní masný typ skotu.",
+      "Postupně se chov rozšířil z Evropy do Severní i Jižní Ameriky, Austrálie, na Nový Zéland i do Afriky. Do České republiky byly první kusy dovezeny v roce 1991.",
     ],
   },
   {
     name: "Mangalice",
-    text: "Tradiční kudrnaté prase.",
-    image: "mangalice.jpg",
+    text: "Tradiční kudrnaté plemeno prasete s nezaměnitelným vzhledem.",
+    image: "Mangalice.jpeg",
     detail: [
-      "Mangalica, také mangalice, mangalika nebo mangulica je primitivní plemeno prasat pocházející z Velké uherské nížiny.",
-      "Vyznačuje se hustými, zvlněnými štětinami. Jedná se o plemeno sádelného typu. Plemeno se vyznačuje dlouhou vlnitou srstí, jíž vedle štětin tvoří i podsada.",
-      "Nejčastěji se chovají mangalice plavé až bílé, s tmavým rypákem a koptýky, které zbarvením odpovídají původním srbským prasatům ze Šumadije.",
-      "Černé mangalice mají více krve bakoňských prasat (bagounů), mohou být buďto celé černé a nebo, častěji, černé s bílým břichem a boky, Maďaři tomuto zbarvení říkají Fecskehasú ('vlaštovčí břicho'). Jen zřídka se chovají mangalice rezavě zbarvené, které mají více krve szalontajského plemene. Dospělá mangalica váží 300-350 kg, kanci bývají těžší než svině, výška v kohoutku dosahuje 80-85 cm.",
-      "Mangalica byla vyšlechtěna roku 1833, kdy srbský kníže Miloš poslal uherskému palatinovi Josefovi darem dvanáct polodivokých, kudrnatých prasat ze srbské Šumadije. Ta byla dále křížena s rezavě zbarvenými szalontajskými prasaty a tmavými prasaty z Bakoňského lesa. Jméno vytvořil Vuk Stefanović Karadžić spojením starogermánského výrazu mangh ('kříženec') se slovanskou ženskou koncovkou -ica. Ve 2. polovině 19. a na počátku 20. století bývaly mladé mangalice přiháněny na prodej do Českých zemí, Rakouska i Haliče. Po roce 1890 byl příhon prasat z veterinárních důvodů omezován. První světová válka a rozpad Rakouska-Uherska znamenaly konec příhonu mangalice do Českých zemí. Ve 20. století začali chovatelé o mangalici ztrácet zájem. Spotřebitelé vyžadovali vepřové maso s nižším obsahem tuku. V roce 1973 byla mangalica vyhlášena za ohrožené plemeno a od roku 1974 existuje v Maďarsku státní podpora pro její chov jakožto genové rezervy. Zásah byl velmi úspěšný, neboť mangalica již není ohrožena a Maďarsko ročně vyprodukuje 60 000 kusů mangalice. Její chov se rozšířil i do jiných států včtně Slovenska a České republiky.",
-      "Větší význam než chov v čisté linii však má v České republice její křížení s jiným plemeny prasat.",
+      "Mangalica je původní, dnes již vzácnější plemeno prasete pocházející z oblasti Velké uherské nížiny. V různých jazycích se její název lehce liší, ale vždy označuje stejné kudrnaté prase.",
+      "Typickým znakem mangalice je hustá, zvlněná srst připomínající ovčí rouno. Jedná se o sádelný typ prasete, jehož srst tvoří štětiny i jemná podsada.",
+      "Nejčastěji se chovají světlé až bílé varianty s tmavým rypákem a paznehty, jejichž zbarvení odpovídá původním srbským prasatům ze Šumadije.",
+      "Existují také černé varianty, případně černé s bílým břichem, kterým se v Maďarsku říká „vlaštovčí břicho“. Dospělá mangalica může vážit 300–350 kg a dorůstat výšky až 85 cm v kohoutku.",
+      "Plemeno bylo vyšlechtěno v roce 1833 křížením několika typů prasat. Ve 20. století však jeho obliba klesla kvůli vysokému obsahu tuku a mangalica byla dokonce vyhlášena ohroženým plemenem. Díky státní podpoře v Maďarsku se však podařilo její chov obnovit a dnes se znovu rozšiřuje i do dalších zemí včetně České republiky.",
+      "V České republice má dnes větší význam především její křížení s jinými plemeny než samotný chov v čisté linii.",
     ],
   },
   {
     name: "Muflon Evropský",
-    text: "Původní horské zvíře.",
-    image: "muflon2.jpg",
+    text: "Elegantní horské zvíře s typickými zatočenými rohy.",
+    image: "Muflon.jpeg",
     detail: [
-      "Muflon dosahuje délky 110 až 130 cm, výšky v kohoutku 70 až 90 cm a hmotnosti 35 až 55 kg. Muflonice jsou menší a dosahují maximálně 30 kg. Letní srst muflona je krátká a rezavohnědá. Bílá srst je na břichu, vnitřní straně a spodku nohou, okolo úst, uvnitř uší, okolo krátkého chvostu a na sedle. Muflon má mohutné spirálovitě stočené rohy 'toulce'. Mladému muflonkovi už po 2 měsících začínají narůstat růžky a roční muflonek je má dlouhé 25 až 35 cm.",
-      "Mufloni kdysi žili ve skalnatých pohořích okolo středozemního moře. Počátek chovu muflonů u nás se nejčastěji datuje do 50. a 60. let minulého století, kdy byli do obory v Hluboké nad Vltavou dovezeni mufloni z rakouské obory Lainz.",
+      "Muflon dorůstá délky 110 až 130 cm, výšky v kohoutku 70 až 90 cm a hmotnosti kolem 35 až 55 kg. Samice jsou menší a lehčí. Letní srst má rezavohnědý odstín s bílými znaky na břiše, nohách a kolem tlamy. Samci jsou charakterističtí mohutnými spirálovitými rohy nazývanými toulce.",
+      "Původně žili mufloni ve skalnatých oblastech Středomoří. Do českých zemí byli dovezeni v 50. a 60. letech minulého století, kdy byl zahájen jejich chov například v oboře Hluboká nad Vltavou.",
+    ],
+  },
+  {
+    name: "Kůň Starokladrubský vraník",
+    text: "Naše národní plemeno",
+    image: "Kladrubsky.png",
+    detail: [
+      "Starokladrubský kůň je nejstarší české plemeno koní a významný chovatelský unikát, jehož historie sahá do začátku novověku. Byl vyšlechtěn především pro slavnostní kočárovou službu na panovnických dvorech a dodnes si zachoval typický barokní vzhled. Dnes se využívá jako výstavní, rodinný i terapeutický kůň a je vhodný i pro děti. Plemeno se dělí na dvě barevné linie – bělouše a vraníky – a jméno získalo podle hřebčína v Kladrubech nad Labem.",
+      "Vraníci vznikali současně s bělouši, ale více zdědili rysy po neapolských předcích, takže nebyli tak jednotní vzhledem. U dvora sloužili hlavně při smutečních obřadech, později se uplatnili i v hospodářství díky své síle a vytrvalosti. Roku 1579 zde Rudolf II. založil hřebčín, který patří k nejstarším dosud fungujícím na světě.",
     ],
   },
 ];
@@ -61,8 +70,8 @@ export default function AnimalsSection() {
   };
 
   return (
-    <Section id="animals">
-      <Typography variant="h3" sx={{ mb: 4 }}>
+    <Section id="animals" sx={{ backgroundColor: "primary.main" }}>
+      <Typography variant="h3" sx={{ mb: 4, color: "white" }}>
         Naše zvířata
       </Typography>
 
@@ -108,6 +117,13 @@ export default function AnimalsSection() {
         onClose={() => setOpen(false)}
         maxWidth="sm"
         fullWidth
+        PaperProps={{
+          sx: {
+            borderRadius: 4,
+            boxShadow: 10,
+            overflow: "hidden",
+          },
+        }}
       >
         <DialogTitle
           sx={{
@@ -115,6 +131,8 @@ export default function AnimalsSection() {
             justifyContent: "space-between",
             alignItems: "center",
             pr: 1,
+            backgroundColor: "#f7f8fa",
+            borderBottom: "1px solid #e6e8ec",
           }}
         >
           {selected?.name}
@@ -133,16 +151,34 @@ export default function AnimalsSection() {
                 maxHeight: 300,
                 objectFit: "cover",
                 borderRadius: 2,
+                boxShadow: 3,
                 mb: 2,
               }}
             />
           )}
 
-          {selected?.detail?.map((paragraph, index) => (
-            <Typography key={index} sx={{ mb: 2, lineHeight: 1.7 }}>
-              {paragraph}
-            </Typography>
-          ))}
+          <Box
+            sx={{
+              p: { xs: 2, sm: 3 },
+              borderRadius: 3,
+              background: "linear-gradient(145deg, #f9fafb, #eef1f5)",
+              boxShadow: 2,
+            }}
+          >
+            {selected?.detail?.map((paragraph, index) => (
+              <Typography
+                key={index}
+                sx={{
+                  lineHeight: 1.8,
+                  fontSize: "0.97rem",
+                  mb: index !== selected.detail.length - 1 ? 2 : 0,
+                  color: "text.primary",
+                }}
+              >
+                {paragraph}
+              </Typography>
+            ))}
+          </Box>
         </DialogContent>
       </Dialog>
     </Section>

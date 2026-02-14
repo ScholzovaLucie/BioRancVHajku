@@ -2,73 +2,37 @@ import React from "react";
 import { Typography } from "@mui/material";
 import Section from "../components/Section";
 
+var text = [
+  "Jsme malá rodinná bio farma a chováme krávy, koně, muflony, prasata, slepice, králíky, husy i kachny.",
+  "Můžete u nás najít i další zvířata, jako jsou psi, kočky, morčata, papoušci, osmáci, křecci a želvy.",
+  "Rádi u nás přivítáme rodiny s dětmi a kohokoli, koho zajímá zemědělství a příroda. Můžeme nabídnout svezení na koních, pozorování stáda muflonů, pohlazení prasátek i pomazlení s ostatními zvířátky nebo jen klidné posezení v srdci přírody a odpočinek od neustálého shonu.",
+  "Nabízíme ustájení koní v režimu 24/7 na rozlehlých pastvinách s možností úkrytu v přístřešku nebo pod četnými stromy. Voda a seno nonstop.",
+  "Několikrát do roka můžeme nabídnout bio hovězí maso z našich býčků, kteří jsou celoročně na pastvinách.",
+  "Ve spolupráci s Broumovským útulkem poskytujeme dočasnou péči a pomoc pro opuštěné pejsky a kočičky, ale i ostatní zvířátka, která to potřebují.",
+  "Pro poutníky je možnost přenocování pod širým nebem nebo ve stanu v těsné blízkosti našich zvířátek. Pejsci i koníci jsou též vítáni.",
+  "V létě pořádáme ve spolupráci s místní MAS příměstské tábory na téma pohyb v přírodě se zvířátky.",
+  "Těšíme se na vaši návštěvu.",
+];
+
 export default function AboutSection() {
   return (
     <Section id="about">
       <Typography variant="h3" sx={{ mb: 2 }}>
         O nás
       </Typography>
-
-      <Typography
-        sx={{
-          fontSize: 18,
-          lineHeight: 1.8,
-          maxWidth: 800,
-          mx: "auto",
-        }}
-      >
-        Jsme malá začínající bio farma s přibližne čtiřiceti kusy krav, deseti
-        koňmi, s několika husami, kachnami, slepicemi, prasaty, králikami.
-      </Typography>
-
-      <Typography
-        sx={{
-          fontSize: 18,
-          lineHeight: 1.8,
-          maxWidth: 800,
-          mx: "auto",
-        }}
-      >
-        Na našem pozemku můžete najít i několik nezemědělských zvížat, jako jsou
-        mufloni, psi, kočky. Jsme docela pěkná atrakce pro rodiny s dětmi a pro
-        kohokoli koho zajímá zemědělství. Můžeme Vám nabídnout projížďku na
-        koních, vidění asi dvaceti kusového stáda muflonů, možná i pohlazení
-        domácích prasat docela nevšedního vzhledu.
-      </Typography>
-
-      <Typography
-        sx={{
-          fontSize: 18,
-          lineHeight: 1.8,
-          maxWidth: 800,
-          mx: "auto",
-        }}
-      >
-        V některých případech nabízíme i kočky a vyjímečně i psi, kteří sou u
-        nás v dočastné péči, díky spolupráci s Broumovským útulkem.
-      </Typography>
-
-      <Typography
-        sx={{
-          fontSize: 18,
-          lineHeight: 1.8,
-          maxWidth: 800,
-          mx: "auto",
-        }}
-      >
-        Kdyby jste měli zájem, můžeme Vám, zatím tedy jen v malé míře,
-        nabídnou i několik kusů bio hovězího masa.
-      </Typography>
-      <Typography
-        sx={{
-          fontSize: 18,
-          lineHeight: 1.8,
-          maxWidth: 800,
-          mx: "auto",
-        }}
-      >
-        Budeme se na Vaši návštěvu moc těšit.
-      </Typography>
+      {text.map((item, index) => (
+        <Typography
+          key={index}
+          sx={{
+            fontSize: 18,
+            lineHeight: 1.8,
+            maxWidth: 800,
+            mx: "auto",
+          }}
+        >
+          {item}
+        </Typography>
+      ))}
     </Section>
   );
 }

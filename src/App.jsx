@@ -7,6 +7,7 @@ import FocusSection from "./sections/FocusSection";
 import AnimalsSection from "./sections/AnimalsSection";
 import GallerySection from "./sections/GallerySection";
 import MeatSection from "./sections/MeatSection";
+import LesniklubSection from "./sections/LesniklubSection";
 import ContactSection from "./sections/ContactSection";
 import Footer from "./components/Footer";
 
@@ -18,8 +19,9 @@ export default function App() {
       <AboutSection />
       <FocusSection />
       <AnimalsSection />
-      <GallerySection />
       <MeatSection />
+      <LesniklubSection />
+      <GallerySection />
       <ContactSection />
       <Footer />
     </Box>

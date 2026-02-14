@@ -12,6 +12,7 @@ import {
   Typography,
 } from "@mui/material";
 import Section from "../components/Section";
+import { Padding } from "@mui/icons-material";
 
 export default function ContactSection() {
   const formRef = useRef(null);
@@ -81,127 +82,165 @@ export default function ContactSection() {
   };
 
   return (
-    <Section id="contact">
-      <Typography variant="h3" sx={{ mb: 4 }}>
+    <Section
+      id="contact"
+      sx={{
+        width: "100%",
+        px: { xs: 2, md: 8 },
+        py: { xs: 5, md: 6 },
+        m: 0,
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <Typography variant="h3" sx={{ mb: 3 }}>
         Kontakt
       </Typography>
 
-      <Grid
-        container
-        spacing={4}
-        alignItems="flex-start"
-        justifyContent="center"
-      >
-        {/* INFO */}
+      <Box sx={{ width: "100%", mx: "auto" }}>
         <Grid
-          item
-          xs={12}
-          md={4}
-          sx={{ display: "flex", justifyContent: "center" }}
+          container
+          spacing={{ xs: 3, md: 6 }}
+          alignItems="center"
+          justifyContent="center"
+          textAlign={{ xs: "center", md: "left" }}
         >
-          <Stack spacing={2} alignItems="center" width="100%">
-            <Typography>
-              <strong>Ranč v Hájku</strong>
-            </Typography>
-            <Typography>Email: bio@rancvhajku.cz</Typography>
-            <Typography>Telefon: +420 737 787 061</Typography>
-            <Typography>
-              Facebook:{" "}
-              <a
-                href="https://www.facebook.com/RancvHajku"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "#5a4d2f", fontWeight: 600 }}
-              >
-                Otevřít profil
-              </a>
-            </Typography>
-          </Stack>
-        </Grid>
-
-        {/* MAPA */}
-        <Grid
-          item
-          xs={12}
-          md={4}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Box
+          {/* INFO */}
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={3}
             sx={{
-              width: "100%",
-              maxWidth: 650,
-              borderRadius: 2,
-              overflow: "hidden",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: { xs: "center", md: "left" },
             }}
           >
-            <iframe
-              title="Mapa Ranč v Hájku"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.0042696544265!2d16.247945815818834!3d50.496878291899286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e6988a31104f3%3A0x93d2ad3d546e9514!2sMachov%20195%2C%20549%2063%20Machov!5e0!3m2!1scs!2scz!4v1645477967250!5m2!1scs!2scz"
+            <Stack
+              spacing={3}
+              alignItems="center"
               width="100%"
-              height="420"
-              style={{ border: 0 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </Box>
-        </Grid>
-
-        {/* FORMULÁŘ */}
-        <Grid
-          item
-          xs={12}
-          md={4}
-          sx={{ display: "flex", justifyContent: "center" }}
-        >
-          <Box
-            component="form"
-            ref={formRef}
-            onSubmit={handleSubmit}
-            sx={{ width: "100%", maxWidth: 650 }}
-          >
-            <Stack spacing={2} alignItems="center">
-              <input type="hidden" name="to_email" value={data.to_email} />
-              <TextField
-                label="Jméno"
-                name="from_name"
-                value={data.from_name}
-                onChange={handleChange}
-                fullWidth
-                required
-              />
-              <TextField
-                label="Email"
-                name="reply_to"
-                type="email"
-                value={data.reply_to}
-                onChange={handleChange}
-                fullWidth
-                required
-              />
-              <TextField
-                label="Zpráva"
-                name="message"
-                value={data.message}
-                onChange={handleChange}
-                multiline
-                rows={4}
-                fullWidth
-                required
-              />
-
-              <Button
-                type="submit"
-                variant="contained"
-                color="primary"
-                disabled={sending}
-                sx={{ width: "100%" }}
-              >
-                {sending ? "Odesílám..." : "Odeslat zprávu"}
-              </Button>
+              sx={{ width: "100%" }}
+            >
+              <Typography>
+                <strong>Ranč v Hájku</strong>
+              </Typography>
+              <Typography>Email: bio@rancvhajku.cz</Typography>
+              <Typography>Telefon: +420 737 787 061</Typography>
+              <Typography>
+                Facebook:{" "}
+                <a
+                  href="https://www.facebook.com/RancvHajku"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: "#5a4d2f", fontWeight: 600 }}
+                >
+                  Otevřít profil
+                </a>
+              </Typography>
             </Stack>
-          </Box>
+          </Grid>
+
+          {/* MAPA */}
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={6}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              sx={{
+                width: "100%",
+                borderRadius: 2,
+                overflow: "hidden",
+                boxShadow: 3,
+              }}
+            >
+              <iframe
+                title="Mapa Ranč v Hájku"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.0042696544265!2d16.247945815818834!3d50.496878291899286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e6988a31104f3%3A0x93d2ad3d546e9514!2sMachov%20195%2C%20549%2063%20Machov!5e0!3m2!1scs!2scz!4v1645477967250!5m2!1scs!2scz"
+                width="100%"
+                height="480"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </Box>
+          </Grid>
+
+          {/* FORMULÁŘ */}
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={3}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Box
+              component="form"
+              ref={formRef}
+              onSubmit={handleSubmit}
+              sx={{ width: "100%" }}
+            >
+              <Stack
+                spacing={2}
+                alignItems="center"
+                sx={{ width: "100%", textAlign: "center" }}
+              >
+                <input type="hidden" name="to_email" value={data.to_email} />
+                <TextField
+                  label="Jméno"
+                  name="from_name"
+                  value={data.from_name}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                />
+                <TextField
+                  label="Email"
+                  name="reply_to"
+                  type="email"
+                  value={data.reply_to}
+                  onChange={handleChange}
+                  fullWidth
+                  required
+                />
+                <TextField
+                  label="Zpráva"
+                  name="message"
+                  value={data.message}
+                  onChange={handleChange}
+                  multiline
+                  rows={4}
+                  fullWidth
+                  required
+                />
+
+                <Button
+                  type="submit"
+                  variant="contained"
+                  color="primary"
+                  disabled={sending}
+                  sx={{ width: "100%" }}
+                >
+                  {sending ? "Odesílám..." : "Odeslat zprávu"}
+                </Button>
+              </Stack>
+            </Box>
+          </Grid>
         </Grid>
-      </Grid>
+      </Box>
 
       <Snackbar
         open={snack.open}

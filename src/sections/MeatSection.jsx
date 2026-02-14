@@ -13,8 +13,6 @@ export default function MeatSection() {
     <Section
       id="meat"
       sx={{
-        backgroundColor: "primary.main",
-        color: "white",
         textAlign: "center",
       }}
     >
@@ -31,9 +29,9 @@ export default function MeatSection() {
 
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           size="large"
-          sx={{ color: "text.primary" }}
+          sx={{ color: "white" }}
           onClick={() => scrollToId("contact")}
         >
           Nezávazná poptávka

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import Section from "../components/Section";
 import logo from "/logo.png";
-import heroBg from "/pozadi.jpeg";
+import heroBg from "/uvod.png";
 
 function scrollToId(id) {
   const el = document.getElementById(id);
@@ -20,9 +20,9 @@ export default function HeroSection() {
         display: "flex",
         alignItems: "center",
         background: `
-          linear-gradient(180deg, rgba(28,28,28,0.65), rgba(28,28,28,0.45)),
-          radial-gradient(circle at 20% 20%, rgba(217,195,154,0.25), transparent 55%),
-          radial-gradient(circle at 80% 20%, rgba(90,77,47,0.30), transparent 55%),
+          linear-gradient(180deg, rgba(40,30,20,0.75), rgba(28,20,12,0.55)),
+          radial-gradient(circle at 20% 20%, rgba(150,110,70,0.35), transparent 55%),
+          radial-gradient(circle at 80% 20%, rgba(90,60,30,0.40), transparent 55%),
           url(${heroBg}) center / cover no-repeat
         `,
         color: "white",
